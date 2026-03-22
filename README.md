@@ -1,6 +1,6 @@
 # 🌐 Personal Website
 
-Welcome to my personal website repository! This site showcases who I am, what I’ve built, and what I’m currently working on.
+Welcome to my personal website repository! This website showcases who I am, what I’ve built, what I’m currently working on, and my overall journey as a software engineer.
 
 ---
 
@@ -17,7 +17,9 @@ This website serves as my digital portfolio where I highlight:
 ## 🛠️ Tech Stack
 
 Built using:
-- **Frontend:** React
+- **Frontend:** JavaScript & HTML
+- **Framework:** Express & React 
+- **Backend:** JavaScript 
 - **Styling:** CSS 
 - **Deployment:** GitHub Pages / Vercel  
 
@@ -29,7 +31,6 @@ Built using:
 - Project showcase section  
 - About Me section  
 - Contact / social links  
-- Fast and minimal UI  
 
 ---
 
