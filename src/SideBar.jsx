@@ -11,6 +11,6 @@ export default function SideBar(key){
     }
 
     return(
-        <p>{sideBarText}</p>
+        <p>HellWorld</p>
     )
 }
