@@ -1,0 +1,112 @@
+@import url('https://cdn.jsdelivr.net');
+
+.loading-container{
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background: #fff5d7;
+    overflow: hidden;
+}
+
+.loading-content{
+    text-align: center;
+    z-index: 2;
+}
+
+.page-title{
+    color: black;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: 'Baloo 2';
+}
+
+
+.loader{
+    width: 600px;
+    height: 10px;
+    border-radius: 10px;
+    background: white;
+    margin: 1.2rem;
+    overflow: hidden;
+}
+
+.loader-bar {
+    height: 100%;
+    background: #849bff;
+    animation: loading 6s ease-in-out infinite;
+}
+
+.loading-background{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.1;
+    animation: float 6s ease-in-out infinite;
+}
+
+.circle1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, #2563eb, #667eea);
+    top: -200px;
+    left: -200px;
+    animation-delay: 0s;
+}
+
+.circle2 {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #764ba2, #f093fb);
+    top: 200px;
+    right: 50px;
+    animation-delay: 2s;
+}
+
+.circle3 {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #764ba2, #f093fb);
+    top: 50%;
+    right: 10%;
+    animation-delay: 2s;
+}
+
+.circle4 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, #764ba2, #f093fb);
+    bottom: 100px;
+    left: 75px;
+    animation-delay: 2s;
+}
+
+@keyframes loading{
+    0%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+
+}
+
+@keyframes float{
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(180deg);
+    }
+}
+
