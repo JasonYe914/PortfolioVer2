@@ -9,13 +9,13 @@ export default function ContactPage(){
     const [Message, setMessage] = useState('');
 
     //TODO: Implement Timer for sending, after 3s setState("sent")
-    const handleClick = () => {
-        let counter = 0;
-        if(counter <= 1000000){
-            setState("sending...");
-            counter++;
-        }
-        setState("sent!");
+    const HandleClick = () => {
+        const timer = setTimeout(() => {
+            setState('Sent!');
+        }, 3000)
+
+        setState('Sending...')
+        return () => clearTimeout(timer);
     }
 
     return(
@@ -45,7 +45,7 @@ export default function ContactPage(){
                 />
             </div>
             <div className="send-btn">
-                <button onClick={handleClick}>{state}</button>
+                <button onClick={HandleClick}>{state}</button>
             </div>
         </div>
     )
