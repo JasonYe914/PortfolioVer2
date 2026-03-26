@@ -14,7 +14,7 @@ export default function ContactPage(){
             setState('Sent!');
         }, 3000)
 
-        setState('Sending...')
+        setState('Sending...');
         return () => clearTimeout(timer);
     }
 
