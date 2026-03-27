@@ -1,0 +1,37 @@
+/* ── History Component ── */
+
+.git-container {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 16px 20px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    width: 20vw;
+}
+
+.git-container:hover {
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+    transform: translateY(-1px);
+}
+
+.title {
+    font-family: 'Fraunces', serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #111;
+    margin-bottom: 8px;
+}
+
+.subheadr1 {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: #4caf82;
+    margin-bottom: 4px;
+}
+
+.subheader2 {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #bbb;
+}

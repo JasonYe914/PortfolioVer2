@@ -10,9 +10,9 @@ export default function NavBar(){
                 <div className="home">
                     <img className="bird-img" alt='s' src="bird2.png" onClick={() => navigate('/', {replace:true})}></img>
                 </div>
-                <div className="nav-buttons">
-                    <button onClick={() => navigate('/roadmap', {replace : true})}>My Journey</button>
-                    <button onClick={() => navigate('/contact-page', {replace: true})}>Contact Me</button>
+                <div className="nav-links">
+                    <p onClick={() => navigate('/roadmap', {replace : true})} className="text">My Journey</p>
+                    <p onClick={() => navigate('/contact-page', {replace: true})} className='text'>Contact Me</p>
                 </div>
             </div>
         </div>

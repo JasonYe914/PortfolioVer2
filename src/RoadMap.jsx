@@ -5,6 +5,7 @@ import '@xyflow/react/dist/style.css';
 import SideBar from "./SideBar.jsx";
 
 //TODO: Find a way to implement a sidebar
+//TODO: Create the roadmap visually first before implementing sideBar
 export default function RoadMap(){
     const initialNodes = [
         {id : 'n1', position: {x:650, y:250}, data:{label:'High School Course: Introduction to Python'}},
