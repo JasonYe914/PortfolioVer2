@@ -8,7 +8,7 @@ export default function ContactPage(){
     const [Email, setEmail] = useState('');
     const [Message, setMessage] = useState('');
 
-    //TODO: Implement Timer for sending, after 3s setState("sent")
+    //TODO: Write a POST method to send to backend
     const HandleClick = () => {
         const timer = setTimeout(() => {
             setState('Sent!');
