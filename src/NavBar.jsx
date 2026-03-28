@@ -12,7 +12,7 @@ export default function NavBar(){
                 </div>
                 <div className="nav-links">
                     <p onClick={() => navigate('/roadmap', {replace : true})} className="text">My Journey</p>
-                    <p onClick={() => navigate('/contact-page', {replace: true})} className='text'>Contact Me</p>
+                    <p onClick={() => navigate('/contact-page', {replace: true})} className='text-2'>Contact Me</p>
                 </div>
             </div>
         </div>

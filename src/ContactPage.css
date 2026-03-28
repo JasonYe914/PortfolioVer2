@@ -15,14 +15,14 @@
 }
 
 .Name{
-    border-radius: 15px;
+    border-radius: 10px;
     border: transparent;
     width: 10vw;
     height: 5vh;
 }
 
 .Email{
-    border-radius: 15px;
+    border-radius: 10px;
     border: transparent;
     width: 20vw;
     height: 5vh;
@@ -36,10 +36,39 @@
 }
 
 input{
-    background: #bcab7a;
+    background: #fff;
     font-size: 0.9rem;
     color: black;
     text-align: center;
 }
 
+.send-btn {
+    display: flex;
+    justify-content: flex-end;
+    width: 31vw;
+}
+
+.send-btn button {
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 13px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.send-btn button:hover {
+    background: #333;
+}
+
+.send-btn button:active {
+    transform: scale(0.97);
+}
+
+.send-btn button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
 
