@@ -1,8 +1,97 @@
-.react-flow{
-    color:black;
+/* ── RoadMap Component ── */
+
+.react-flow {
+    background-color: #fafaf8;
+    font-family: 'DM Sans', sans-serif;
 }
 
-.control-buttons{
-    background: white;
-    border: transparent;
+/* ── Nodes ── */
+.react-flow__node {
+    background: #fffdf7;
+    border: 1px solid #e8e2d9;
+    border-radius: 16px;
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    color: #111;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.react-flow__node:hover {
+    border-color: #c8a97e;
+    box-shadow: 0 6px 20px rgba(180, 140, 90, 0.12);
+}
+
+.react-flow__node.selected {
+    border-color: #c8a97e;
+    box-shadow: 0 0 0 2px rgba(200, 169, 126, 0.25);
+}
+
+/* ── Edges ── */
+.react-flow__edge-path {
+    stroke: #d9d0c4;
+    stroke-width: 1.5;
+}
+
+.react-flow__edge:hover .react-flow__edge-path {
+    stroke: #c8a97e;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+    stroke: #c8a97e;
+}
+
+/* ── Connection line (while dragging) ── */
+.react-flow__connection-path {
+    stroke: #c8a97e;
+    stroke-width: 1.5;
+}
+
+/* ── Handles ── */
+.react-flow__handle {
+    width: 8px;
+    height: 8px;
+    background: #fffdf7;
+    border: 1.5px solid #d9d0c4;
+    border-radius: 50%;
+    transition: border-color 0.15s, background 0.15s;
+}
+
+.react-flow__handle:hover {
+    background: #c8a97e;
+    border-color: #c8a97e;
+}
+
+/* ── Controls ── */
+.control-buttons {
+    background: #fffdf7;
+    border: 1px solid #e8e2d9;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.react-flow__controls-button {
+    background: #fffdf7;
+    border: none;
+    border-bottom: 1px solid #e8e2d9;
+    color: #888;
+    transition: background 0.15s, color 0.15s;
+}
+
+.react-flow__controls-button:hover {
+    background: #f5efe6;
+    color: #111;
+}
+
+.react-flow__controls-button:last-child {
+    border-bottom: none;
+}
+
+/* ── Background ── */
+.react-flow__background {
+    background-color: #fafaf8;
+}
+
+.react-flow__background pattern circle {
+    fill: #e0d9d0;
 }

@@ -21,9 +21,8 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    border-radius: 10px;
     margin-right: 40px;
-    gap: 10px;
+    gap: 20px;
 }
 
 .home{
@@ -39,11 +38,21 @@
 }
 
 .text{
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 1.1rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.0rem;
 }
 
 .text:hover{
     border-bottom: solid 1px black;
+    cursor: pointer;
+}
+
+.text-2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.0rem;
+}
+
+.text-2:hover{
+    border-bottom: solid 1px black;
+    cursor: pointer;
 }
