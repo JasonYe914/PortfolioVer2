@@ -38,8 +38,10 @@
 }
 
 .text{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.0rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 1.1rem;
+    color: #aaa;
+    text-transform: uppercase;
 }
 
 .text:hover{
@@ -47,12 +49,3 @@
     cursor: pointer;
 }
 
-.text-2{
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.0rem;
-}
-
-.text-2:hover{
-    border-bottom: solid 1px black;
-    cursor: pointer;
-}

@@ -8,6 +8,7 @@ import History from './History';
 import { useState, useEffect } from "react";
 import "./App.css";
 
+
 const skills = {
     Languages: [
         { name: "JavaScript", color: "#F7DF1E", text: "#000" },
@@ -123,8 +124,6 @@ async function gitHistory(){
     return data;
 }
 
-
-//TODO: Parse JSON with .MAP and only map specific elements + make a githubCard component
 function LandingPage() {
     const [display, setDisplay] = useState([]);
     useEffect(() => {

@@ -1,20 +1,29 @@
 import './ContactPage.css';
 import {useState} from 'react';
 
-//TODO: Set up Contact page + backend
 export default function ContactPage(){
     const [state, setState] = useState('Send');
     const [Name, setName] = useState('');
     const [Email, setEmail] = useState('');
     const [Message, setMessage] = useState('');
 
-    //TODO: Write a POST method to send to backend
     const HandleClick = () => {
         const timer = setTimeout(() => {
             setState('Sent!');
         }, 3000)
 
         setState('Sending...');
+
+        const res = fetch('https://localhost:3000/api/contact', {
+            method: "POST",
+            headers: {"Content-type" : "application/json"},
+            body: {Name: {Name}, Email: {Email}, Message:{Message}}
+        })
+        console.log(res);
+        if (res.status === 429){
+            setState("Too many requests - Slow Down!");
+        }
+
         return () => clearTimeout(timer);
     }
 
