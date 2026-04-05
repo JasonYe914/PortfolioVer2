@@ -1,0 +1,92 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    background: #fffdf7;
+    border-left: 1px solid #e8e2d9;
+    padding: 40px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 10;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.06);
+    overflow-y: auto;
+}
+
+.sidebar.open {
+    transform: translateX(0);
+}
+
+.sidebar-close {
+    margin-top: 10vh;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #aaa;
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.sidebar-close:hover {
+    color: #111;
+}
+
+.sidebar-title {
+    margin-top: 10vh;
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.02em;
+    padding-right: 24px;
+}
+
+.sidebar-desc {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.75;
+}
+
+.sidebar-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-skills-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.sidebar-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.sidebar-skill-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 6px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.sidebar-image {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e8e2d9;
+    object-fit: cover;
+}

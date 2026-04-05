@@ -1,7 +1,6 @@
 import './NavBar.css';
 import {useNavigate} from "react-router-dom";
 
-//TODO: Implement the mapping to the different pages
 export default function NavBar(){
     let navigate = useNavigate();
     return(
@@ -12,7 +11,7 @@ export default function NavBar(){
                 </div>
                 <div className="nav-links">
                     <p onClick={() => navigate('/roadmap', {replace : true})} className="text">My Journey</p>
-                    <p onClick={() => navigate('/contact-page', {replace: true})} className='text-2'>Contact Me</p>
+                    <p onClick={() => navigate('/contact-page', {replace: true})} className='text'>Contact Me</p>
                 </div>
             </div>
         </div>
