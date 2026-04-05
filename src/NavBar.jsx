@@ -7,7 +7,7 @@ export default function NavBar(){
         <div className="navbar">
             <div className ="nav-container">
                 <div className="home">
-                    <img className="bird-img" alt='s' src="bird2.png" onClick={() => navigate('/', {replace:true})}></img>
+                    <img className="bird-img" alt='s' src="../public/bird2.png" onClick={() => navigate('/', {replace:true})}></img>
                 </div>
                 <div className="nav-links">
                     <p onClick={() => navigate('/roadmap', {replace : true})} className="text">My Journey</p>
