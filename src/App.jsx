@@ -301,7 +301,6 @@ export default function App(){
             <Routes>
                 <Route path="/" element={<LandingPage/>} />
                 <Route path="/Roadmap" element={<RoadMap/>}/>
-                <Route path="/contact-page" element={<ContactPage/>} />
             </Routes>
         </div>
     )
