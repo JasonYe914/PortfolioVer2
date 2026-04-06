@@ -1,0 +1,5 @@
+{
+  "installCommand": "cd ver2portfolio && npm install",
+  "buildCommand": "cd ver2portfolio && npx vite build",
+  "outputDirectory": "ver2portfolio/dist"
+}
